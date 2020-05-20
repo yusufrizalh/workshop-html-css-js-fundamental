@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamen JavaScript</title>
+</head>
+<body>
+    <p>Menjumlah Dua Bilangan</p>
+    Angka 1: <input type="text" id="angka1"> <br>
+    Angka 2: <input type="text" id="angka2"> <br> <br>
+    <button onclick="penjumlahan()">Jumlahkan</button> <br> <br>
+
+    <p>Hasil: <input type="text" id="hasil" disabled></p>
+    
+    <script>
+        function penjumlahan() {
+            let a, b, c;
+            a = Number(document.getElementById("angka1").value);
+            b = Number(document.getElementById("angka2").value);
+            c = a + b;
+            document.getElementById("hasil").value = c;
+            console.log("Hasil: " + c);
+        }
+    </script>
+</body>
+</html>
